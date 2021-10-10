@@ -28,9 +28,6 @@ Run another docker container and clone this code to your docker environment.
 
 
 
-<!---[![IMAGE](https://media.giphy.com/media/QW460yejWnYkBr3qYN/giphy.gif)](https://gfycat.com/thoroughunrulyblacknorwegianelkhound.gif)-->
-![IMAGE](https://raw.githubusercontent.com/UCCS-CS4300-5300/kwalcott-public/main/gettingStarted.png)
-
 
 ## **Overview**
 
