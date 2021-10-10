@@ -1,12 +1,11 @@
 # **Ruby Intro**
 
-This homework is made up of two sections comprised of multiple parts and gives some basic practice in Ruby as well as getting you accustomed to making testing a regular part of your workflow.
+This homework gives some basic practice in Ruby as well as getting you accustomed to making testing a regular part of your workflow.
 
-GET STARTED EARLY it’s a **LONG **assignment. Ask lots of questions along the way!! We will be working through this material in lecture, but you can get started by reading Chapter 3 and trying out some of the tutorials listed at the end of this assignment. 
+Get started by reading Chapter 3 and trying out some of the tutorials listed at the end of this assignment. 
 
-REMEMBER that each Homework assignment (there are 2) are worth 7% of your overall grade, and the homeworks are here to help you get started, set up your environment, and learn the basic tools that you will need for your project.  Step one: “learn” Ruby- easy right? No.  Jump in as soon as possible and make sure you understand everything you’re doing along the way- ask if you don’t! Use Basecamp to your advantage!
+Step one: “learn” Ruby- easy right? No.  Jump in as soon as possible and start trying out Ruby.
 
-Good luck!
 
 ## **Learning Goals**
 
@@ -16,61 +15,18 @@ After completing this assignment, you will know how to:
 *   Understand the Ruby project conventions for where code files and test files are located in a project's directory hierarchy
 *   Run individual tests or suites of tests using the RSpec unit testing tool
 *   Understand the basic syntax of RSpec unit tests and write your own
-    *   Note that we will talk about other options that can be used instead of Rspec when you begin your projects.
 
 
-## **Setup**
-
-To get to your coding environment, go to http://localhost after your docker container is up and running.
-
-To get started, open a terminal. In the upper left-hand corner, click on the hamburger (the 3 lines), View, Terminal. And you're set!
-
-To work more fully from the terminal, install your editor of choice. For example: 
-`apt-get update && apt-get install vim` or `apt-get update && apt-get install emacs`. To set this editor as default for all applications, `export EDITOR=vi` or `export EDITOR=emacs`. 
 
 ## **Commit Work Frequently**
 
-As you edit your work, commit your code to your repository often!! After you have cloned your repository in the step below, you will be able to commit your code from anywhere within the homework directory to your private class repository. 
-
-To commit and push:
-
-`git status` \\\Check what files have changed AND are staged for commit. If files are missing that you want staged for commit.
-
-If files need to be added, `git add fileOrFolderName`. Run `git status` to double check. 
-
-`git commit -m "added else condition for if <0"` \\\Give a descriptive message for your commit.
-
-`git push origin main` \\\Push your code to the main branch of your remote repo named origin (in this case, you'll already have it set up to be https://github.com/UCCS-CS4300-5300/YOURUCCSUSERNAME_GOES_HERE.git)
-
-Note that if you've been away for awhile or there's a possibility that code has changed in your remote repository, use `git pull origin main` to pull from the repo. 
-
-When running ANY git command, be sure to read all output for warnings/errors- oftentimes, the output will tell you what you need to do. 
+Run another docker container and clone this code to your docker environment.  
 
 ## SECTION 1: RUBY BASICS
 
 ------------------------------------------------------------------------------------------------------------
 
-Clone your GitHub repo into a homework directory by running: 
 
-```
-git clone https://github.com/UCCS-CS4300-5300/YOURUCCSUSERNAME_GOES_HERE.git homework
-```
-
-If you have done this correctly you should now see a `homework` directory under `/root/environment/homework/`.
-
-Go to your `homework` directory (if not there already)
-
-```
-cd homework
-```
-
-then clone the skeleton code at [https://github.com/UCCSCS3300/hw-ruby-intro](https://github.com/UCCSCS3300/hw-ruby-intro)  to your Cloud9 docker container. To do this, run:
-
-```
-git clone https://github.com/UCCSCS3300/hw-ruby-intro.git && rm -rf hw-ruby-intro/.git
-```
-
-in the terminal of Cloud9 running inside of the docker container.  This creates a folder called `hw-ruby-intro`, which contains a skeleton for part 1 of your assignment, described below.
 
 <!---[![IMAGE](https://media.giphy.com/media/QW460yejWnYkBr3qYN/giphy.gif)](https://gfycat.com/thoroughunrulyblacknorwegianelkhound.gif)-->
 ![IMAGE](https://raw.githubusercontent.com/UCCS-CS4300-5300/kwalcott-public/main/gettingStarted.png)
@@ -78,12 +34,10 @@ in the terminal of Cloud9 running inside of the docker container.  This creates 
 
 ## **Overview**
 
-The repo for this assignment follows a fairly standard Ruby convention for codebases: **the code files are stored in lib/ and the test files are stored in spec/**. (We use the RSpec unit-testing framework; if we were using Ruby's default framework, known as Test::Unit, the test files would be under test/.)
+The repo for this assignment follows a fairly standard Ruby convention for codebases: **the code files are stored in lib/ and the test files are stored in spec/**. (We use the RSpec unit-testing framework)
 
-_Note: There is no autograder being used for this course.  Please ignore the comment on the top of the ruby_intro.rb file._
 
 You SHOULD do your own testing. Test each of the 3 parts separately, or together. The files spec/part[123]_spec.rb contain RSpec tests for each of the three parts. For example, to test your answers to Part 1, say rspec ./spec/part1_spec.rb. rspec with no arguments runs the tests in all the files spec/*_spec.rb.
-
 
 
 *   The line numbers in the RSpec error report will give you guidance as to which tests failed. (You can check the[ RSpec documentation](http://rspec.info) to see how the .rspec file can be used to customize the output format.)
@@ -92,11 +46,11 @@ To ensure you have the rspec gem installed, you need bundler and can then run bu
 
 
 ```
-$ cd /root/environment/homework/hw-ruby-intro
+$ cd Cs3300-ruby-rspec
 $ bundle install
-$ rspec spec/ or rspec spec/part#_spec.rb 
-```
 
+$ rspec spec/ for all parts 1 through 3 or rspec spec/part#_spec.rb to run 1 at a time for 1 through 3
+```
 
 When the above completes successfully you'll have RSpec installed and can run rspec from the command line to test your code. 
 
@@ -140,11 +94,6 @@ Include a method price_as_string that returns the price of the book formatted wi
 You can check your progress on the all the above by running rspec ./spec/part3_spec.rb.
 
 
-## **More Challenges**
-
-
-
-*   Try pairing using the[ one-undermanship pair programming style](http://www.agileventures.org/remote-pair-programming/pair-programming-protocols)
 
 
 ## **SECTION 2: BEYOND THE BASICS**
@@ -161,8 +110,7 @@ cd hw-ruby-more
 ```
 
 
-The goal of this multi-part assignment is to get you accustomed to more advanced Ruby coding and introduce you more to RSpec, the unit testing tool we will be using heavily throughout the semester.  In Part 1, you ran rspec to check your code.  In Part 2, you’ll look at and analyze the test code and write some test code yourself to backup your Ruby code-- note the file structure and coding structure used in Rspec and figure out what it’s doing! You’ll be writing it all on your own later. The tests you’re writing in this assignment are all UNIT LEVEL tests. 
-
+The goal of this multi-part assignment is to get you accustomed to more advanced Ruby coding and introduce you more to RSpec, the unit testing tool.  In Part 1, you ran rspec to check your code.  In Part 2, you’ll look at and analyze the test code and write some test code yourself to backup your Ruby code-- note the file structure and coding structure used in Rspec and figure out what it’s doing!  The tests you’re writing in this assignment are all UNIT LEVEL tests. 
 
 
         1. Run the command `bundle install`.
