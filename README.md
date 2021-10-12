@@ -92,20 +92,3 @@ Include a method price_as_string that returns the price of the book formatted wi
 You can check your progress on the all the above by running rspec ./spec/part3_spec.rb.
 
 
-
-## Good Reading:
-
-
-For Ruby tutorials, check out: 
-
-
-
-*   [tryruby.org](http://tryruby.org/)
-*   [rubymonk.com](http://rubymonk.com/)
-*   [code school ruby-bits](https://www.codeschool.com/courses/ruby-bits) (starts free - later paid)
-*   [codewars Ruby kata](http://www.codewars.com/kata/search/ruby?q=&r%5B%5D=-8&r%5B%5D=-7&r%5B%5D=-6&beta=false)
-*   [rubykoans.com](http://rubykoans.com/)
-*   [Ruby Style Guide](https://github.com/styleguide/ruby)
-*   [Ruby](http://www.zenspider.com/Languages/Ruby/QuickRef.html) cheat sheet
-
-If you find other good resources, please post a note to Piazza!
