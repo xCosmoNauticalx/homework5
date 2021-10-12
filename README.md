@@ -20,7 +20,8 @@ After completing this assignment, you will know how to:
 
 ## **Commit Work Frequently**
 
-Run another docker container and clone this code to your docker environment.  
+Run another docker container and clone this code to your docker environment. 
+Create a repository in GitHub to put your code.
 
 ## SECTION 1: RUBY BASICS
 
