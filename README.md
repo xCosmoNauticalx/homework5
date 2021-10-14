@@ -11,7 +11,7 @@ Step one: “learn” Ruby- easy right? No.  Jump in as soon as possible and sta
 
 After completing this assignment, you will know how to:
 
-*   Write simple code that uses basic constructs in the Ruby language, including methods and arguments, conditionals, string and array manipulation, regular expressions, and basic object-oriented programming mechanisms
+*   Write code that uses basic constructs in the Ruby language, including methods and arguments, conditionals, string and array manipulation, regular expressions, and basic object-oriented programming mechanisms
 *   Understand the Ruby project conventions for where code files and test files are located in a project's directory hierarchy
 *   Run individual tests or suites of tests using the RSpec unit testing tool
 *   Understand the basic syntax of RSpec unit tests and write your own
@@ -20,7 +20,7 @@ After completing this assignment, you will know how to:
 
 ## **Commit Work Frequently**
 
-Run another docker container and clone this code to your docker environment. 
+Run another docker container and fork this code to your docker environment. 
 Create a repository in GitHub to put your code but make it private.
 
 ## SECTION 1: RUBY BASICS
